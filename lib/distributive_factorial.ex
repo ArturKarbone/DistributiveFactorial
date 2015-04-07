@@ -1,6 +1,6 @@
 defmodule DistributiveFactorial do
 
-  def   calculate_factorial  n do
+  def calculate_factorial  n do
     do_calculate_factorial n, items_per_chunk(n), number_of_distributive_chunks		
     collect_the_results([],number_of_distributive_chunks) |> Enum.reduce &(&1*&2)
   end   
